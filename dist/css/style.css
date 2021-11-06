@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(70%, #fff5f5));
+  background: linear-gradient(180deg, white 0%, #fff5f5 70%);
+}
+
+.main {
+  padding-bottom: 3rem;
+}
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 5.25rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2rem;
+}
+
+.main__logo img {
+  height: 1.25rem;
+}
+
+.image-desktop {
+  display: none;
+}
+
+.main__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3.75rem;
+}
+
+.main__content .image-mobile img {
+  width: 100%;
+}
+
+.main__content .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  gap: 1.25rem;
+}
+
+.main__content .content .content__title {
+  text-align: center;
+}
+
+.main__content .content .content__title h1 {
+  letter-spacing: 0.9375rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #413a3a;
+}
+
+.main__content .content .content__title span {
+  color: #ce9797;
+  font-weight: 300;
+}
+
+.main__content .content .content__paragraph {
+  text-align: center;
+  width: 79%;
+}
+
+.main__content .content .content__paragraph p {
+  line-height: 1.5rem;
+  color: #ce9797;
+  font-size: 0.875rem;
+}
+
+.main__content .content .submit {
+  position: relative;
+  width: 19.4375rem;
+}
+
+.main__content .content .submit input[type="email"] {
+  background: transparent;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.875rem;
+  border: 1px solid #d9c9ca;
+  width: 100%;
+  height: 3rem;
+  border-radius: 1.5rem;
+  padding: 0 1rem;
+}
+
+.main__content .content .submit input[type="email"]::-webkit-input-placeholder {
+  color: #d9c9ca;
+}
+
+.main__content .content .submit input[type="email"]:-ms-input-placeholder {
+  color: #d9c9ca;
+}
+
+.main__content .content .submit input[type="email"]::-ms-input-placeholder {
+  color: #d9c9ca;
+}
+
+.main__content .content .submit input[type="email"]::placeholder {
+  color: #d9c9ca;
+}
+
+.main__content .content .submit input[type="email"]:focus {
+  outline: none;
+}
+
+.main__content .content .submit input[type="email"]:invalid {
+  border-color: #e06c6c;
+}
+
+.main__content .content .submit .error {
+  position: absolute;
+  top: 0;
+  right: 5rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.main__content .content .submit .error img {
+  width: 1.5rem;
+}
+
+.main__content .content .submit button {
+  border: none;
+  height: 3rem;
+  width: 4rem;
+  border-radius: 1.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 75%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main__content .content .submit button img {
+  width: 0.75rem;
+}
+
+.main__content .content .submit button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.main__content .content .submit .error-msg {
+  padding: 0.625rem 1.0625rem;
+  font-size: 0.75rem;
+  color: #e06c6c;
+  display: none;
+}
+
+footer {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    background: url(../images/bg-pattern-desktop.svg) no-repeat;
+    background-size: cover;
+  }
+  .page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .page .image-desktop {
+    display: block;
+    height: 100vh;
+    width: 42%;
+  }
+  .page .main {
+    padding: 0 19% 0 11.5%;
+  }
+  .page .main .main__content .image-mobile {
+    display: none;
+  }
+  .page .main .main__logo {
+    height: 10.1875rem;
+    padding: 0;
+  }
+  .page .main .main__logo img {
+    height: 2rem;
+  }
+  .page .main .content {
+    padding-top: 4rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .page .main .content .content__title {
+    text-align: left;
+  }
+  .page .main .content .content__title h1 {
+    letter-spacing: 0.9375rem;
+    font-size: 4rem;
+  }
+  .page .main .content .content__paragraph {
+    text-align: left;
+    width: 100%;
+  }
+  .page .main .content .content__paragraph p {
+    line-height: 1.75rem;
+    font-size: 1rem;
+  }
+  .page .main .content .submit {
+    position: relative;
+    width: 27.8125rem;
+  }
+  .page .main .content .submit input[type="email"] {
+    font-size: 0.875rem;
+    border-width: 2px;
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 1.75rem;
+    padding: 0 1rem;
+  }
+  .page .main .content .submit .error {
+    top: 0;
+    right: 7.25rem;
+    height: 3.5rem;
+  }
+  .page .main .content .submit .error img {
+    width: 1.5rem;
+  }
+  .page .main .content .submit button {
+    position: absolute;
+    top: 0;
+    height: 3.5rem;
+    width: 6.1875rem;
+    border-radius: 1.75rem;
+  }
+  .page .main .content .submit .error-msg {
+    padding: 0.625rem 1.0625rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

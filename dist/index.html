@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="main">
+        <div class="main__logo">
+          <img src="images/logo.svg" alt="Base apparel" />
+        </div>
+        <div class="main__content">
+          <div class="image-mobile">
+            <img src="images/hero-mobile.jpg" alt="Women" />
+          </div>
+
+          <div class="content">
+            <div class="content__title">
+              <h1>
+                <span class="title__pink">WE'RE</span><br />COMING<br />SOON
+              </h1>
+            </div>
+            <div class="content__paragraph">
+              <p>
+                Hello fellow shoppers! We're currently building our new fashion
+                store. Add your email below to stay up-to-date with
+                announcements and our launch deals.
+              </p>
+            </div>
+
+            <div class="submit">
+              <form name="submit" action='' method='get' id="form">
+                <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Email Address"
+              />
+              </form>
+              <div class="error">
+                <img
+                  src="images/icon-error.svg"
+                  alt="error"
+                  class="error-icon"
+                />
+              </div>
+              <button type="submit" form="form">
+                <img src="images/icon-arrow.svg" alt="arrow" />
+              </button>
+              <div class="error-msg">Please provide a valid email</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="image-desktop">
+        <img src="images/hero-desktop.jpg" alt="Women" />
+      </div>
+    </div>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/lonelyknight2902">Truong Thinh Do</a>.
+      </p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
