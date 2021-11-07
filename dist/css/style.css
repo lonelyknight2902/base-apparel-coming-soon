@@ -5,10 +5,14 @@
           box-sizing: border-box;
 }
 
-body {
-  margin: 0;
+html {
   background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(70%, #fff5f5));
   background: linear-gradient(180deg, white 0%, #fff5f5 70%);
+  height: 100vh;
+}
+
+body {
+  margin: 0;
 }
 
 .main {
@@ -26,6 +30,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
 }
 
 .main__logo {
@@ -180,6 +185,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 75%);
+  -webkit-box-shadow: 0 0.75rem 2rem #f8bfbf;
+          box-shadow: 0 0.75rem 2rem #f8bfbf;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -205,7 +212,7 @@ footer {
 }
 
 @media only screen and (min-width: 1000px) {
-  body {
+  html {
     background: url(../images/bg-pattern-desktop.svg) no-repeat;
     background-size: cover;
   }
@@ -223,8 +230,11 @@ footer {
   }
   .page .image-desktop {
     display: block;
-    height: 100vh;
+    height: 100%;
     width: 42%;
+  }
+  .page .image-desktop img {
+    height: 100%;
   }
   .page .main {
     padding: 0 19% 0 11.5%;

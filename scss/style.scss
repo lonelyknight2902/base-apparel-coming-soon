@@ -1,9 +1,13 @@
 @import "global";
 @import "variables";
 
+html {
+  background: linear-gradient(180deg, $gradient1 0%, $gradient2 70%);
+  height: 100vh;
+}
+
 body {
   margin: 0;
-  background: linear-gradient(180deg, $gradient1 0%, $gradient2 70%);
 }
 
 .main {
@@ -14,6 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 .main__logo {
@@ -118,6 +123,7 @@ body {
         justify-content: center;
         align-items: center;
         background: linear-gradient($angle, $gradient3 0%, $gradient4 75%);
+        box-shadow: 0 0.75rem 2rem $gradient3;
         transition: 0.5s;
         img {
           width: 0.75rem;
@@ -144,7 +150,7 @@ footer {
 }
 
 @media only screen and (min-width: 1000px) {
-  body {
+  html {
     background: url(../images/bg-pattern-desktop.svg) no-repeat;
     background-size: cover;
   }
@@ -154,8 +160,11 @@ footer {
     align-items: flex-start;
     .image-desktop {
       display: block;
-      height: 100vh;
+      height: 100%;
       width: 42%;
+      img {
+        height: 100%;
+      }
     }
     .main {
       padding: 0 19% 0 11.5%;
