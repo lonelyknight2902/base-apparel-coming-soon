@@ -14,9 +14,6 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -32,77 +29,75 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+- Desktop
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![Desktop](./screenshots/desktop.png)
+![Desktop](./screenshots/desktop-error.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+- Mobile
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+<p align="center">
+  <img width="30%" src="./screenshots/mobile.png">
+  <img width="30%" src="./screenshots/mobile-error.png">
+</p>
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Github Page](https://lonelyknight2902.github.io/base-apparel-coming-soon/dist/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
+- HTML5
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- SASS
+- Vanilla Javascript
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+After finishing the project, I am finally able to learn how to use SASS to improve my performance in styling as well as responsive design for mobile and desktop screen size.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
+- Variables in SCSS
+```scss
+$desaturated-red: hsl(0, 36%, 70%);
+$dark-grayish-red: hsl(0, 6%, 24%);
+$lightgray: hsl(356,18%,82%);
+$gradient1: hsl(0, 0%, 100%);
+$gradient2: hsl(0, 100%, 98%);
+$light-gradient2: hsl(0, 73%, 90%);
+$gradient3: hsl(0, 80%, 86%);
+$gradient4: hsl(0, 74%, 74%);
+$error: hsl(0,65%,65%);
+$angle: 135deg;
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+- Add Event listener in Javascript
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if(!re.test(document.forms["submit"]["email"].value)) {
+        msg.style.display = "block";
+        icon.style.display = "flex";
+    } else {
+        msg.style.display = "none";
+        icon.style.display = "none";
+    }
+})
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Interneting is hard](https://www.internetingishard.com) - This beginner-friendly website for web development provides useful knowledge and great visualization which helped me understand the basic concept of HTML and CSS with ease.
+- [Sass Tutorial for Beginners - CSS With Superpowers by freeCodeCamp](https://www.youtube.com/watch?v=_a5j7KoflTs&t=252s&pp=ugMICgJ2aRABGAE%3D) - This is an amazing 2 hours video on SASS which helped me finally understand how to use SASS to improve my coding. Recommended for beginners.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Github - [lonelyknight2902](https://github.com/lonelyknight2902)
+- Frontend Mentor - [@lonelyknight2902](https://www.frontendmentor.io/profile/lonelyknight2902)
+- Linkedin - [Trường Thịnh Đỗ](www.linkedin.com/in/trường-thịnh-đỗ-418616209)
